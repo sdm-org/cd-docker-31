@@ -18,3 +18,4 @@ COPY --from=kaniko /kaniko /kaniko
 
 # declare /sdm as volume so kaniko ignores it
 VOLUME ["/sdm"]
+
