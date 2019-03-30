@@ -13,3 +13,8 @@ COPY . /starter
 CMD ["npm","start"]
 
 EXPOSE 8080
+
+COPY --from=kaniko /kaniko /kaniko
+
+# declare /sdm as volume so kaniko ignores it
+VOLUME ["/sdm"]
